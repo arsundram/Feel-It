@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayouttextview"
+            android:layout_marginBottom="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:elevation="12dp"
+                android:id="@+id/view2"
+                app:cardCornerRadius="23dp"
+                android:layout_gravity="fill_vertical"
+                android:shape="ring">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_person_dark_black_24dp"
+                android:id="@+id/profilepic"
+                />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User's Name"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:id="@+id/tv_username"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/linearlayouttextview"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/textview_style_curved"
+                android:textColor="#2a2a2b"
+
+                android:id="@+id/tv_thought"
+                android:lines="2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today's Date : 25|10|2018"
+                android:textSize="8dp"
+                android:id="@+id/tv_date"
+                android:layout_marginLeft="10dp"
+                android:textColor="#353535"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
